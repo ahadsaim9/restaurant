@@ -1,0 +1,138 @@
+/* ------- box-1 */
+.header {
+  text-align: center;
+  border-bottom: 3px solid black;
+  width: 22%;
+  padding-bottom: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.box-1 {
+  background-color: lightgray;
+  margin: 25px 10px;
+  padding: 25px 40px;
+  box-shadow: 5px 5px 13px rgb(66, 39, 39);
+  border-radius: 10px;
+}
+.box-1 img {
+  border-radius: 50%;
+  display: block;
+  border: 1px solid gray;
+  margin-left: 50px;
+}
+/*--------------- box-2 --------------- */
+
+.header-1 {
+  text-align: center;
+  border-bottom: 3px solid black;
+  width: 270px;
+  font-size: 30px;
+  padding-bottom: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.box-2 {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 25px 40px;
+  box-shadow: 5px 5px 13px rgb(66, 39, 39);
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+.box-2 img {
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 120px;
+  display: block;
+  border: 1px solid gray;
+}
+.container1 button {
+  padding: 6px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(233, 47, 5);
+  color: white;
+  box-shadow: 6px 6px 15px gray;
+}
+
+/* search field */
+#search-box {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px;
+  height: 100px;
+}
+#search-box input {
+  width: 300px;
+  height: 35px;
+  padding-left: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-right: 20px;
+  border: none;
+  box-shadow: 5px 5px 10px gray;
+}
+#search-box input:focus {
+  outline: none;
+}
+#search-box button {
+  color: aliceblue;
+  background-color: gray;
+  padding: 3px 15px;
+  box-shadow: 5px 5px 10px gray;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+/* Responsive */
+@media screen and (max-width: 1250px) {
+  .container1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container1 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .header-1 {
+    width: 200px;
+    font-size: 20px;
+    padding-bottom: 3px;
+  }
+  #search-box input {
+    width: 200px;
+    height: 35px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #search-box button {
+    padding: 3px 15px;
+    margin-top: 10px;
+    display: block;
+    box-shadow: 5px 5px 10px gray;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+}
